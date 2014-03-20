@@ -8,6 +8,14 @@
 <title>Main page</title>
 </head>
 <body>
-Hello people!!
+My first form
+
+<form action="userForm">
+	name: <input type="text" name="name"/>
+	<br/>
+	age: <input type="text" name="edad"/>
+	<br/>
+	<input type="submit" value="Go!">
+</form>
 </body>
 </html>

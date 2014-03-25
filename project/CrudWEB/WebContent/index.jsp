@@ -8,6 +8,7 @@
 <title>Main page</title>
 </head>
 <body>
+<h1><c:out value="${nameProject}"/></h1>
 My first form
 
 <form action="userForm">

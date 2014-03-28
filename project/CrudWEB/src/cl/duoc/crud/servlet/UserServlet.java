@@ -14,7 +14,6 @@ import cl.duoc.crud.bean.IUserBean;
 import cl.duoc.crud.bean.UserBean;
 
 
-@WebServlet("/Saludo")
 public class UserServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
@@ -27,12 +26,9 @@ public class UserServlet extends HttpServlet {
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/user.jsp");
 		request.setAttribute("user", userBean.getMyUser());
+		request.setAttribute("users", userBean.getUsers());		
 		dispatcher.forward(request, response);		
 		
 	}
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}
-
+		
 }
